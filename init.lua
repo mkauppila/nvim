@@ -1,4 +1,4 @@
-require('plugins')
+require('packer-config')
 
 vim.cmd([[
   augroup packer_user_config
