@@ -10,6 +10,12 @@ return require('packer').startup(function(use)
     -- Dracula theme for styling
     use 'Mofiqul/dracula.nvim'
 
+    -- Lualine information / Status bar
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
+
     -- Mason lsp config
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
