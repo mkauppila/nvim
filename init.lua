@@ -1,4 +1,5 @@
 require('packer-config')
+require('mason-config')
 
 vim.cmd([[
   augroup packer_user_config
