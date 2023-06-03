@@ -3,7 +3,9 @@ require('mason-config')
 require('gopls')
 require('code-completion')
 require('nvim-tree-config')
+require('keymaps')
 require('debug-go-delve')
+require('styling')
 
 vim.cmd([[
   augroup packer_user_config

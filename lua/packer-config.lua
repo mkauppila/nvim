@@ -7,6 +7,9 @@ return require('packer').startup(function(use)
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
 
+    -- Dracula theme for styling
+    use 'Mofiqul/dracula.nvim'
+
     -- Mason lsp config
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
