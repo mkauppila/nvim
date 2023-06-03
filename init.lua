@@ -6,6 +6,7 @@ require('nvim-tree-config')
 require('keymaps')
 require('debug-go-delve')
 require('styling')
+require('treesitter-config')
 
 vim.cmd([[
   augroup packer_user_config
