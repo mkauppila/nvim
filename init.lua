@@ -2,6 +2,7 @@ require('packer-config')
 require('mason-config')
 require('gopls')
 require('code-completion')
+require('nvim-tree-config')
 
 vim.cmd([[
   augroup packer_user_config
