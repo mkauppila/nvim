@@ -29,5 +29,9 @@ return require('packer').startup(function(use)
              'nvim-tree/nvim-web-devicons', -- optional, for file icons
          },
      }
+     -- DAP for debugging
+     use 'mfussenegger/nvim-dap'
+     -- UI for DAP
+     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 end)
 

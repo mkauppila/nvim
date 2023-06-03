@@ -3,6 +3,7 @@ require('mason-config')
 require('gopls')
 require('code-completion')
 require('nvim-tree-config')
+require('debug-go-delve')
 
 vim.cmd([[
   augroup packer_user_config
