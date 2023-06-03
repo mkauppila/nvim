@@ -1,5 +1,7 @@
 require('packer-config')
 require('mason-config')
+require('gopls')
+require('code-completion')
 
 vim.cmd([[
   augroup packer_user_config
