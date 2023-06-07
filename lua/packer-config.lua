@@ -55,7 +55,6 @@ return require('packer').startup(function(use)
      }
 
      -- Telescope used to fuzzy search files
-     -- TODO: figure out RipGrep with this
      use {
          'nvim-telescope/telescope.nvim', tag = '0.1.0',
          requires = { {'nvim-lua/plenary.nvim'} }
