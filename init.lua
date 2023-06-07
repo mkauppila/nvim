@@ -47,6 +47,7 @@ require('theme-dracula')
 require('treesitter-config')
 require('lualine-config')
 require('telescope-config')
+require('gui-neovide')
 
 -- this seems not to work? or maybe I should also do PackerSync
 vim.cmd([[
