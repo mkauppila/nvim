@@ -7,6 +7,7 @@ vim.opt.termguicolors = true
 
 -- empty setup using defaults
 require("nvim-tree").setup({
-    --  open_on_setup = true,
-    -- ignore_buffer_on_setup = true,
+  filters = {
+    dotfiles = true -- hide dot files
+  }
 })
