@@ -2,11 +2,16 @@
 local map = vim.api.nvim_set_keymap
 
 -- map the key n to run the command :NvimTreeToggle
-map('n', 'n', [[:NvimTreeToggle<CR>]], {})
+map('n', '<leader>pv', [[:NvimTreeToggle<CR>]], {})
 
 -- nvim-dap-ui keymappins
 -- Press Ctrl+d to toggle debug mode, will remove NvimTree also
 map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui'.toggle()<CR>]], {})
+
+
+-- allow moving highlighted blocks around
+map("v", "K", ":m '<-2<CR>gv=gv", {})
+map("v", "J", ":m '>+1<CR>gv=gv", {})
 
 -- nvim-dap keymappings
 -- Press F5 to debug

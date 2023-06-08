@@ -4,7 +4,7 @@ vim.keymap.set('n', '<leader>ff', ':lua require"telescope.builtin".find_files({n
 -- ripgrep files, respects gitignore
 vim.keymap.set('n', '<leader>fg', ':lua require"telescope.builtin".live_grep()<CR>', {})
 
-vim.keymap.set('n', '<leader>fb', ':lua require"telescope.builtin".buffers()<CR>', {})
+vim.keymap.set('n', '<leader><leader>', ':lua require"telescope.builtin".buffers()<CR>', {})
 vim.keymap.set('n', '<leader>fh', ':lua require"telescope.builtin".help_tags()<CR>', {})
 
 -- this is not workign?
