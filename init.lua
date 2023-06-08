@@ -56,6 +56,8 @@ require('lualine-config')
 require('telescope-config')
 require('gui-neovide')
 require('indent-blankline-config')
+require('gitsigns-config')
+require('fugitive-config')
 
 -- this seems not to work? or maybe I should also do PackerSync
 vim.cmd([[

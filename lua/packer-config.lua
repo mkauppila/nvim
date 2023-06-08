@@ -38,6 +38,14 @@ return require('packer').startup(function(use)
     }
   }
 
+  use('tpope/vim-fugitive')
+  use {
+    'lewis6991/gitsigns.nvim',
+      config = function()
+        require('gitsigns').setup()
+      end
+    }
+
      -- File explorer tree
      use {
          'nvim-tree/nvim-tree.lua',
