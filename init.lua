@@ -56,6 +56,7 @@ require('lualine-config')
 require('telescope-config')
 require('gui-neovide')
 require('indent-blankline-config')
+require('undotree-config')
 require('gitsigns-config')
 require('fugitive-config')
 

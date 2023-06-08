@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
+    use 'mbbill/undotree'
 
     use {
       'VonHeikemen/lsp-zero.nvim',
