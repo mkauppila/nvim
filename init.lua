@@ -1,8 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- note: to fix the icons on macos 
--- follow this https://stackoverflow.com/q/72899162
 
 -- move to folder vim-options.lua
 local o = vim.opt
@@ -32,8 +30,17 @@ o.clipboard:append("unnamedplus")
 o.splitright = true
 o.splitbelow = true
 
--- makes - part of the word, ie. works better with `dw`
+-- makes - and . part of the word, ie. works better with `dw`
 o.iskeyword:append("-")
+-- o.iskeyword:append(".")
+
+o.hlsearch = false
+o.incsearch = true
+
+o.colorcolumn = "80"
+
+o.undodir = os.getenv("HOME") .. "/.vim/undodir"
+o.undofile = true
 
 
 require('packer-config')
