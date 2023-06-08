@@ -46,6 +46,7 @@ o.undofile = true
 require('packer-config')
 require('mason-config')
 require('gopls')
+require('lsp-zero-config')
 require('nvim-tree-config')
 require('keymaps')
 require('debug-go-delve')
