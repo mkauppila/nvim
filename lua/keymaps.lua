@@ -8,10 +8,16 @@ map('n', '<leader>pv', [[:NvimTreeToggle<CR>]], {})
 -- Press Ctrl+d to toggle debug mode, will remove NvimTree also
 map('n', '<C-d>', [[:NvimTreeToggle<CR> :lua require'dapui'.toggle()<CR>]], {})
 
-
 -- allow moving highlighted blocks around
-map("v", "K", ":m '<-2<CR>gv=gv", {})
-map("v", "J", ":m '>+1<CR>gv=gv", {})
+map('v', 'K', ":m '<-2<CR>gv=gv", {})
+map('v', 'J', ":m '>+1<CR>gv=gv", {})
+
+-- easier tab navigation
+map('n', '<leader>tn', [[:tabnew<CR>]], {})
+map('n', '<leader>tn', [[:tabnext<CR>]], {})
+map('n', '<leader>tp', [[:tabprev<CR>]], {})
+map('n', '<leader>to', [[:tabonly<CR>]], {})
+
 
 -- nvim-dap keymappings
 -- Press F5 to debug
